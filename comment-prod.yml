@@ -3,7 +3,7 @@ spring:
     name: comment-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://database-1.ciyfminicabg.ap-northeast-2.rds.amazonaws.com:3306/comment_service
+    url: jdbc:mysql://database-1.ciyfminicabg.ap-northeast-2.rds.amazonaws.com:3306/comment_service?serverTimezone=Asia/Seoul
     username: admin
     password: djmw3113
   jpa:
