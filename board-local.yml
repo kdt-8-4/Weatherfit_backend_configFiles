@@ -19,7 +19,8 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
       enabled: true
-
+feignClient:
+  url: 13.124.197.227:8080
 cloud:
   aws:
     credentials:
