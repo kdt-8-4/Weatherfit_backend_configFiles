@@ -8,7 +8,7 @@ spring:
     password: djmw3113
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
