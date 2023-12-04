@@ -39,6 +39,23 @@ spring:
           timeout: 5000
           writetimeout: 5000
     auth-code-expiration-millis: 1800000  # 30 * 60 * 1000 == 30분
+
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 30MB
+      max-file-size: 10MB
+  cloud:
+    aws:
+      credentials:
+        access-key: AKIAVO5NLNBM3VISJPVS
+        secret-key: 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
+      region:
+        static: ap-northeast-2
+      s3:
+        bucket: heesung-s3
+      stack:
+        auto: false
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
