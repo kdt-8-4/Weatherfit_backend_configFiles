@@ -44,17 +44,17 @@ spring:
       enabled: true
       max-request-size: 30MB
       max-file-size: 10MB
-  cloud:
-    aws:
-      credentials:
-        access-key: AKIAVO5NLNBM3VISJPVS
-        secret-key: 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
-      region:
-        static: ap-northeast-2
-      s3:
-        bucket: heesung-s3
-      stack:
-        auto: false
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAVO5NLNBM3VISJPVS
+      secret-key: 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
+    region:
+      static: ap-northeast-2
+    s3:
+      bucket: heesung-s3
+    stack:
+      auto: false
 logging:
   level:
     org.springframework.security.web: trace
