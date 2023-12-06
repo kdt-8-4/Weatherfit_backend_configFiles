@@ -57,6 +57,7 @@ cloud:
       bucket: heesung-s3
     stack:
       auto: false
+      
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
