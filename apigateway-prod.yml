@@ -14,7 +14,7 @@ spring:
           filters:
             - RewritePath=/user/(?<segment>.*), /$\{segment}
         - id: board-service
-          uri: lb://board-service
+          uri: lb://board-service-copy
           predicates:
             - Path=/board/**
           filters:
