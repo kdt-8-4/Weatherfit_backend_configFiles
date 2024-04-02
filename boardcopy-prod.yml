@@ -35,7 +35,7 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
     prefer-ip-address: true
-    ip-address: 43.202.132.151
+    ip-address: 43.202.255.246
   client:
     fetch-registry: true
     register-with-eureka: true
