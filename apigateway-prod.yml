@@ -47,6 +47,7 @@ spring:
             allowed-origins:
               - 'http://localhost:3000'
               - 'https://weatherfit.vercel.app'
+              - 'https://weatherfit-refactoring.vercel.app'
             allowed-headers:
               - '*'
             exposed-headers:
