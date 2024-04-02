@@ -5,9 +5,9 @@ spring:
     name: board-service-copy
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://weatherfit.cxqgttg1ggis.ap-northeast-2.rds.amazonaws.com:3306/board_service
+    url: jdbc:mysql://database-1.chgc82kw0jrl.ap-northeast-2.rds.amazonaws.com:3306/board_service?serverTimezone=Asia/Seoul
     username: admin
-    password: ekffld5465
+    password: djmw3113
   jpa:
     show-sql: true
     hibernate:
