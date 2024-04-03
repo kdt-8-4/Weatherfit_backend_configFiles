@@ -23,12 +23,12 @@ spring:
 cloud:
   aws:
     credentials:
-      access-key: AKIAU6QEN4K6BUQT5LEO
-      secret-key: 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
+      access-key: AKIAVB46LPNHL6GF3TZO
+      secret-key: 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
     region:
       static: ap-northeast-2
     s3:
-      bucket: weatherfit-board-image
+      bucket: weatherfit-board-image-copy
     stack:
       auto: false
 eureka:
