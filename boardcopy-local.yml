@@ -1,0 +1,41 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration
+  application:
+    name: board-service-copy
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://database-1.chgc82kw0jrl.ap-northeast-2.rds.amazonaws.com:3306/board_service?serverTimezone=Asia/Seoul
+    username: admin
+    password: djmw3113
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  kafka:
+    bootstrap-servers: 13.209.197.7:9092
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+feignClient:
+  url: 13.124.197.227:8080
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAVB46LPNHL6GF3TZO
+      secret-key: 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
+    region:
+      static: ap-northeast-2
+    s3:
+      bucket: weatherfit-board-image-copy
+    stack:
+      auto: false
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+server:
+  port: 8080
